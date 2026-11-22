@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="350" viewBox="0 0 900 350" role="img" aria-labelledby="title desc">
+  <title id="title">Relación Aerolínea y Tripulante</title>
+  <desc id="desc">Una aerolínea puede tener cero o varios tripulantes embebidos en su documento.</desc>
+  <rect width="900" height="350" fill="#f8fafc"/>
+  <rect x="55" y="50" width="355" height="240" rx="10" fill="#fff" stroke="#334155" stroke-width="2"/>
+  <rect x="535" y="50" width="310" height="240" rx="10" fill="#fff" stroke="#334155" stroke-width="2"/>
+  <path d="M55 108H410 M535 108H845" stroke="#334155" stroke-width="2"/>
+  <g font-family="Arial,sans-serif" fill="#0f172a" text-anchor="middle">
+    <text x="232" y="88" font-size="25" font-weight="bold">Aerolínea</text>
+    <text x="690" y="88" font-size="25" font-weight="bold">Tripulante</text>
+  </g>
+  <g font-family="monospace" font-size="18" fill="#334155">
+    <text x="80" y="153">+ id: String</text><text x="80" y="190">+ name: String</text>
+    <text x="80" y="227">+ country: String</text><text x="80" y="264">+ crew: Tripulante[]</text>
+    <text x="560" y="153">+ id: String</text><text x="560" y="190">+ name: String</text>
+    <text x="560" y="227">+ role: String</text><text x="560" y="264">+ licenseNumber: String</text>
+  </g>
+  <path d="M410 180H535" stroke="#334155" stroke-width="2"/>
+  <path d="M410 180L425 170L440 180L425 190Z" fill="#334155"/>
+  <g font-family="Arial,sans-serif" font-size="16" fill="#334155" text-anchor="middle">
+    <text x="425" y="156">1</text><text x="520" y="156">0..*</text>
+    <text x="472" y="214">crew (embebido)</text>
+    <text x="450" y="330">Una aerolínea puede tener varios tripulantes</text>
+  </g>
+</svg>
